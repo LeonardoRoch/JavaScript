@@ -1,0 +1,106 @@
+Matéria = JavaScript
+Professor = Edson Maia
+data = 02/12/23
+Aula = 002 
+
+Arrays, Métodos, Length e Spreed Operator
+
+Array: É uma variável com várias posições, começando com o índice 0 e assim por diante. Sua sintaxe é assim:
+
+let a = ['0', '1', '2', '3']
+
+Pode atribuir qualquer nome para um array, e pode inserir qualquer valor ou string dentro dele.
+
+Vamos supor que eu tenha um array de matérias escolares...
+
+let materias = ['Matemática', 'Ciências', 'Física']
+
+E quero adicionar mais matérias após a última matéria. Então se usa a propriedade "Push". 
+
+materias.push('Química') 
+
+Desta forma, meu array que antes era...
+
+let materias = ['Matemática', 'Ciências', 'Física']
+
+ficaria assim:
+
+let materias = ['Matemática', 'Ciências', 'Física', 'Química']
+
+
+Suponhamos que eu queira remover algum valor do final do meu array materias. Então se usa a propriedade "Pop".
+
+materia.pop()
+
+Meu array que antes era...
+
+let materias = ['Matemática', 'Ciências', 'Física', 'Química']
+
+Tem seu ultimo atributo removido.
+
+let materias = ['Matemática', 'Ciências', 'Física']
+
+Pode usar mais de uma vez a propriedade pop no mesmo array
+
+
+Se eu quiser adicionar algum atributo ao final do array, usa-se a propriedade "unshift"
+
+let materias = ['Matemática', 'Ciências', 'Física']
+antes do unshift
+
+materias.unshift('Química')
+let materias = ['Química', 'Matemática', 'Ciências', 'Física']
+Após o unshift
+
+
+Para remover do início, usá-se a propriedade shift
+
+let materias = ['Matemática', 'Ciências', 'Física']
+Antes do shift
+
+let materias = ['Ciências', 'Física']
+Após o shift
+
+
+Para remover de alguma posição específica, usá-se a propriedade splice
+
+A sintaxe dessa propriedade tem uma ordem específica
+
+posição inicial da minha seleção, posição de remoção
+
+let materias = ['Matemática', 'Ciências', 'Física']
+Antes do splice
+
+materias.splice(1, 2)
+let materias = ['Matemática', 'Física']
+Após o splice
+
+
+A propriedade slice serve para copiar um array e aplicar em outro. Vamos criar dois arrays de exemplo
+
+let produtos = ['Açúcar', 'Café', 'Arroz'] Esse array tem 3 índices
+let produtos1 = [] Esse é um array teste, sem propriedades
+
+Se eu usar a propriedade slice sem indicar os parâmetros de início e fim da cópia, será copiado todo o array
+
+let produtos1 = produtos.slice()
+
+Dessa forma, produtos1 que não tinha nada, agora está assim:
+let produtos1 = ['Açúcar', 'Café', 'Arroz']
+
+
+Agora adicionando os parâmetros, ficaria assim
+
+let produtos1 = produtos.slice(0, 1)
+
+resultado: let produtos1 = ['Açúcar', 'Café']
+
+
+Para saber o comprimento do array, use a propriedade length
+
+length.produtos1
+
+
+A propriedade spreed operator copiará o array, mas adicionará atributos a mais
+
+let teste = [...produtos, 'Ovo', 'Frango']

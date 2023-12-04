@@ -1,0 +1,39 @@
+Matéria = JavaScript
+Professor = Edson Maia
+Data = 02/12/23
+Aula = 001
+
+Operadores e Operações
+
+- Operadores Aritméticos
+
++ = Adição
+- = Subtração
+* = Multiplicação
+/ = Divisão
+% = Resto ou Módulo
+
+- Operadores Lógicos
+
+== Igual a
+=== Idêntico a
+!= Diferente de 
+!== Não é idêntico
+
+&& E
+|| Ou
+!a Não
+
+Em relação ao NÂO lógico, ele altera o valor de um objeto para seu valor negacional, por exemplo:
+
+let a = true 
+console.log(!a)
+
+Será mostrado no console, o valor negacional de true, ou seja, false.
+
+Operadores relacionais
+
+>  Maior 
+<  Menor
+>= Maior ou Igual
+<= Menor ou Igual
